@@ -98,7 +98,7 @@ class Inferencer:
 
         Image.fromarray(x_img).save(save_dir + img_id + '.png', quality=100)
         Image.fromarray((output_argmax.squeeze().numpy() * 255).astype(np.uint8)).save(save_dir + img_id + f'_argmax.png', quality=100)
-        # Image.fromarray(output_heatmap.astype(np.uint8)).save(save_dir + img_id + f'_heatmap_overlay.png', quality=100)
+        Image.fromarray(output_heatmap.astype(np.uint8)).save(save_dir + img_id + f'_heatmap_overlay.png', quality=100)
 
         metric_result = metrics.metrics_np(output_argmax[None, :], target.squeeze(0).detach().cpu().numpy(), b_auc=True)
         print(f'{img_id} \t Done !!')
