@@ -30,7 +30,7 @@
     warmup_epoch: 20,
     weight_decay: 0.05, # 0.05
   batch_size: 4,
-  epoch: 10000,
+  epoch: 500,
   ema_decay: 0, # set 0 to deactivate
   class_weight: [1.0, 1.0],
   model_path: '', # pretrained/FSG-Net-DRIVE.pt
