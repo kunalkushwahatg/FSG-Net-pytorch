@@ -7,11 +7,11 @@
   wandb: true,
   worker: 8,
   log_interval: 9999,
-  save_interval: 1,
+  save_interval: 10,
   saved_model_directory: 'model_ckpts',
   train_fold: 1,
   project_name: 'FSG-Net',
-  CUDA_VISIBLE_DEVICES: '2',
+  CUDA_VISIBLE_DEVICES: '1',
 
   ### Train Parameters
   model_name: 'FSGNet',
